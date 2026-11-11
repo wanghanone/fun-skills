@@ -1,0 +1,53 @@
+name: 新玩法提案
+description: 提议一个「吃喝玩乐」方向的 skill，先聊想法再动手
+title: "[skill] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        还没写代码也可以提。请先确认素材来源与授权，参考 [贡献指南](https://github.com/wanghanone/fun-skills/blob/main/CONTRIBUTING.md)。
+  - type: input
+    id: name
+    attributes:
+      label: Skill 名称
+      description: 小写字母、数字与连字符，例如 weekend-planner；需与目录名一致
+      placeholder: weekend-planner
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分类
+      options:
+        - 吃
+        - 喝
+        - 玩
+        - 乐
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 场景与用户会怎么说
+      description: 描述一句话需求，例如「把这张照片变成 52×52 的拼豆图纸」
+      placeholder: 用户会怎么触发这个 skill？
+    validations:
+      required: true
+  - type: textarea
+    id: io
+    attributes:
+      label: 输入与交付物
+      description: 需要哪些输入、输出什么文件（图纸、清单、可运行代码等）
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: 依赖与第三方资源
+      description: 运行库、系统工具，以及会用到的色卡 / 字体 / 图片 / 素材及其许可来源
+  - type: textarea
+    id: example
+    attributes:
+      label: 效果示意
+      description: 可以贴截图、链接或文字描述预期效果

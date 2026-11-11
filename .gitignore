@@ -1,0 +1,17 @@
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+
+# 平台私有元数据，不进入遵循开放规范的仓库
+_user_meta.json
+agents/openai.yaml
+
+# 技能运行时生成物（大体积 PDF / 高清图 / 临时输出不要提交）
+skills/**/output/
+skills/**/dist/
+skills/**/.cache/

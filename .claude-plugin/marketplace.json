@@ -1,0 +1,22 @@
+{
+  "name": "fun-skills",
+  "owner": {
+    "name": "wanghanone"
+  },
+  "metadata": {
+    "description": "Agent Skills for everyday fun: bead patterns, desktop pets, weekend ideas",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "play-skills",
+      "description": "吃喝玩乐向的 Agent Skills 集合：拼豆图纸、桌宠优化与周末玩法",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/bead-pattern",
+        "./skills/desktop-pet-tuneup"
+      ]
+    }
+  ]
+}
